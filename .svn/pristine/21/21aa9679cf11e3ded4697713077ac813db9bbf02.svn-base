@@ -1,0 +1,20 @@
+package kr.or.ddit.collection;
+
+public class TeacherVO extends PersonVO{
+	private String operateType;	// 정교사
+	private String manageType;	// 담임교사
+	
+	public String getOperateType() {
+		return operateType;
+	}
+	public void setOperateType(String operateType) {
+		this.operateType = operateType;
+	}
+	public String getManageType() {
+		return manageType;
+	}
+	public void setManageType(String manageType) {
+		this.manageType = manageType;
+	}
+	
+}

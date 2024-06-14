@@ -1,0 +1,33 @@
+package kr.or.ddit.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Manage {
+	private List<PersonVO> list = new ArrayList<PersonVO>();
+	
+	public void addPersonVO(PersonVO personVO) {
+		list.add(personVO);
+	}
+	
+	public void printList() {
+		for(PersonVO personVO : list) {
+			System.out.println(personVO);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Manage manage = new Manage();
+		
+		StudentVO studentVO1 = new StudentVO();
+		studentVO1.setName("홍길동");
+		studentVO1.setAge(10);
+		studentVO1.setSex("남자");
+		studentVO1.setHak(3);
+		studentVO1.setBan(3);
+		studentVO1.setNo(10);
+		
+		manage.addPersonVO(studentVO1);
+		manage.printList();
+	}
+}

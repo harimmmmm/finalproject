@@ -1,0 +1,30 @@
+package kr.or.ddit.collection;
+
+public class StudentVO extends PersonVO{
+	
+	private int hak;	//학년
+	private int ban;	//반
+	private int no;		//번호
+	
+	public int getHak() {
+		return hak;
+	}
+	public void setHak(int hak) {
+		this.hak = hak;
+	}
+	public int getBan() {
+		return ban;
+	}
+	public void setBan(int ban) {
+		this.ban = ban;
+	}
+	public int getNo() {
+		return no;
+	}
+	public void setNo(int no) {
+		this.no = no;
+	}
+	
+	
+
+}
